@@ -12,15 +12,21 @@ gem 'rails_12factor', group: :production
 
 gem 'bootstrap-sass'
 
-gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
 # Add stripe for payment processing
+gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
 
+#Figaro gem for securely managing credenials
 gem 'figaro'
+
+# Add letter-opener for handling emails in development
+gem 'letter_opener', group: :development
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
+
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
+
 # Use CoffeeScript for .js.coffee assets and views
 gem 'coffee-rails', '~> 4.0.0'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
