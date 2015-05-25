@@ -5,9 +5,15 @@ Rails.application.routes.draw do
 
   # Required for stripe
   resources :charges
+
+  # Route for showing products
+  resources :products, only: [:index]
   
   # Route for showing purchases
   resources :purchases, only: [:show]
+
+  
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
