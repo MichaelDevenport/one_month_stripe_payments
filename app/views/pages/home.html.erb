@@ -57,7 +57,7 @@
       <div class="modal-body clearfix">
             <div id="modal-left" class="pull-left">
               <p><strong><%= @product.author %></strong></p>
-              <%= @product.author_description %>
+              <%= raw @product.author_description %>
             </div>
             <div id="modal-right" class="pull-right">
               <%= image_tag( @product.author_image_name, alt: @product.author) %>
